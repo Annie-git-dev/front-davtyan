@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React Posts Project
 
 A simple React project for displaying a list of posts with search functionality and modals.  
@@ -71,9 +70,3 @@ Pagination support for posts.
 Filtering by tags and authors.
 
 Dark theme and improved responsiveness.
-
-
-=======
-# front-davtyan
-A simple React project for displaying a list of posts with search functionality and modals.  
->>>>>>> 7f99872519a07317157c7f1188e9c70a90b4e3b8
