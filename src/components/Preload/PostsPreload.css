@@ -1,0 +1,32 @@
+.posts-preload {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.post-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.preload-bg {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+.post-image.preload-bg { height: 120px; width: 100%; }
+.post-tag.preload-bg { height: 16px; width: 60px; }
+.post-title.preload-bg { height: 20px; width: 80%; }
+.post-desc.preload-bg { height: 14px; width: 100%; }
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}

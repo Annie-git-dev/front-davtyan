@@ -1,0 +1,80 @@
+.posts-container {
+  margin-top: 3rem;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.posts-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.post-card {
+  flex: 1 1 calc(33.333% - 16px);
+  padding: 1rem;
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+}
+
+.post-image {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.post-tag {
+  font-weight: bold;
+  font-size: 0.813rem;
+  line-height: 0.813rem;
+  color: #EB0028;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.post-desc {
+  display: block;
+  margin-block: 1rem;
+  font-size: 0.875rem;
+  color: #9b9b9b;
+}
+
+.post-desc strong {
+  color: #000;
+}
+
+.post-desc-details {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+}
+
+.post-desc-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1024px) {
+  .post-card {
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .post-card {
+    flex: 1 1 100%;
+  }
+}

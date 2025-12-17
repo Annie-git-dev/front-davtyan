@@ -1,0 +1,74 @@
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 99;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    transform: translateX(-100%);
+    animation: slideIn 0.3s forwards;
+}
+
+.menu-item {
+    cursor: pointer;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.submenu {
+    list-style: none;
+    padding-left: 1rem;
+    border-left: 1px solid #e9e9e9;
+}
+
+.submenu li,
+.mobile-menu-list li {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9e9e9;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.mobile-menu-list li:last-child {
+    border-bottom: none;
+}
